@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expenses Chart Component</title>
+    <link
+      rel="shortcut icon"
+      href="images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="container">
+      <header id="header">
+        <div class="stats-container">
+          <small class="my-balance">My balance</small>
+          <h2 class="balance-amount">$921.48</h2>
+        </div>
+
+        <img src="images/logo.svg" class="logo" alt="Logo" />
+      </header>
+
+      <main id="main">
+        <h3 class="spending-last-7-days">Spending - Last 7 days</h3>
+
+        <div class="graph">
+          <div class="mon">
+            <div class="amount-spent amount-spent-mon">$17.45</div>
+            <div class="mon-chart chart"></div>
+            <small class="day">mon</small>
+          </div>
+          <div class="tue">
+            <div class="amount-spent amount-spent-tue">$34.91</div>
+            <div class="tue-chart chart"></div>
+            <small class="day">tue</small>
+          </div>
+          <div class="wed">
+            <div class="amount-spent amount-spent-wed">$52.36</div>
+            <div class="wed-chart highest-spend chart"></div>
+            <small class="day">wed</small>
+          </div>
+          <div class="thu">
+            <div class="amount-spent amount-spent-thu">$31.07</div>
+            <div class="thu-chart chart"></div>
+            <small class="day">thu</small>
+          </div>
+          <div class="fri">
+            <div class="amount-spent amount-spent-fri">$23.39</div>
+            <div class="fri-chart chart"></div>
+            <small class="day">fri</small>
+          </div>
+          <div class="sat">
+            <div class="amount-spent amount-spent-sat">$43.28</div>
+            <div class="sat-chart chart"></div>
+            <small class="day">sat</small>
+          </div>
+          <div class="sun">
+            <div class="amount-spent amount-spent-sun">$25.48</div>
+            <div class="sun-chart chart"></div>
+            <small class="day">sun</small>
+          </div>
+        </div>
+
+        <div class="break"></div>
+
+        <footer id="footer">
+          <div class="stats-container">
+            <small class="total-this-month">Total this month</small>
+            <h2 class="total-spent">$478.33</h2>
+          </div>
+
+          <div class="percentage">
+            <h4 class="increase">+2.4%</h4>
+            <small class="from-last-month">from last month</small>
+          </div>
+        </footer>
+      </main>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
